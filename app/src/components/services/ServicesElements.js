@@ -8,7 +8,8 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: ${colorScheme.black};
-
+  width: 100%;
+  overflow: hidden;
   @media screen and (max-width: 768px) {
     height: 1100px;
   }

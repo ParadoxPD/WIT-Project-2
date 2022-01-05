@@ -24,13 +24,11 @@ const AboutUs = () => {
           Right from the decision of making it a new car purchase, various
           treatment to keep your car looking new throughout its life span,
           periodical service requirement, accidental repair shop, bunch of
-          accessories to choose from, yearly insurance renewal and most
-          importantly dealing in branded tyres, which are the most important
-          part of the car. By doing so have tried that all our customers meet
-          their all requirements under single roof, which ultimately saves times
-          from moving places to places for various requirements. We make car
-          looks better than new. We provide international standard quality
-          services with affordable price.
+          accessories to choose from, yearly insurance renewal. By doing so have
+          tried that all our customers meet their all requirements under single
+          roof, which ultimately saves times from moving places to places for
+          various requirements. We make car looks better than new. We provide
+          international standard quality services with affordable price.
         </AboutP>
         <AboutImg src={image} />
       </AboutWrapper>

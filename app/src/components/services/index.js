@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Icon1 from "../../assets/HomeCollectionCard.svg";
 import ServicesImage from "../../assets/services-heading.svg";
 import DetailingImage from "../../assets/services/detailing.svg";
 import TreatmentImage from "../../assets/services/treatment.svg";
