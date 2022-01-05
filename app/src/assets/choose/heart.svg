@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128.896" height="128.229" viewBox="0 0 128.896 128.229">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_293" data-name="Path 293" d="M0,0H128.9V128.229H0Z"/>
+    </clipPath>
+  </defs>
+  <g id="_20-love-heart-outline" data-name="20-love-heart-outline" clip-path="url(#clip-path)">
+    <path id="Path_291" data-name="Path 291" d="M157.495,134.937a26.262,26.262,0,0,0-15.7-44.676,26.42,26.42,0,0,0-21.634,7.534l-.032.031-.032-.031a26.332,26.332,0,0,0-37.335,37.143l37.367,37.174L157.5,134.937Z" transform="translate(-55.682 -66.987)" fill="#353738" stroke="#fb0" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_292" data-name="Path 292" d="M132.236,118.947a19.483,19.483,0,0,0-8.089-2.424,20.6,20.6,0,0,0-14.565,6.008,20.351,20.351,0,0,0-5.549,10.045" transform="translate(-77.213 -86.64)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>
