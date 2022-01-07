@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="593" height="70.444" viewBox="0 0 593 70.444">
-  <g id="Group_149" data-name="Group 149" transform="translate(0 -4320)">
-    <path id="Path_518" data-name="Path 518" d="M0,0H560.494L593,70.444H0Z" transform="translate(0 4320)" fill="#f11"/>
-    <text id="Body_shop" data-name="Body shop" transform="translate(160 4369)" fill="#fff" font-size="34" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Body shop</tspan></text>
+  <g id="Group_168" data-name="Group 168" transform="translate(0 -4320)">
+    <path id="Path_518" data-name="Path 518" d="M0,0H560.494L593,70.444H0Z" transform="translate(0 4320)" fill="#f81515"/>
+    <text id="Body_shop" data-name="Body shop" transform="translate(160 4369)" fill="#fff" font-size="34" font-family="TimesNewRomanPS-BoldMT, Times New Roman" font-weight="700"><tspan x="0" y="0">Body shop</tspan></text>
   </g>
 </svg>

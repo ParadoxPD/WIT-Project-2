@@ -17,6 +17,7 @@ import image3 from "../../assets/choose/experience.svg";
 import image4 from "../../assets/choose/authentic.svg";
 import image5 from "../../assets/choose/heart.svg";
 import image6 from "../../assets/choose/money.svg";
+import image7 from "../../assets/choose/trained.svg";
 
 const ChooseUs = () => {
   return (
@@ -38,13 +39,13 @@ const ChooseUs = () => {
           <ChooseCard>
             <CardIcon src={image2} />
             <CardDesc>
-              <CardH2>Multi-Service Under One Roof</CardH2>
+              <CardH2>Multi-Service Under Single Roof</CardH2>
             </CardDesc>
           </ChooseCard>
           <ChooseCard>
-            <CardIcon src={image3} />
+            <CardIcon src={image3} style={{ transform: "scale(0.9)" }} />
             <CardDesc>
-              <CardH2>Years of Experience</CardH2>
+              <CardH2>16 Years of Experience</CardH2>
             </CardDesc>
           </ChooseCard>
           <ChooseCard>
@@ -63,6 +64,18 @@ const ChooseUs = () => {
             <CardIcon src={image6} />
             <CardDesc>
               <CardH2>Affordable Price</CardH2>
+            </CardDesc>
+          </ChooseCard>
+          <ChooseCard style={{ visibility: "hidden", pointerEvents: "none" }}>
+            <CardIcon src={image6} />
+            <CardDesc>
+              <CardH2>Affordable Price</CardH2>
+            </CardDesc>
+          </ChooseCard>
+          <ChooseCard>
+            <CardIcon src={image7} />
+            <CardDesc>
+              <CardH2>Well Trained Team</CardH2>
             </CardDesc>
           </ChooseCard>
         </ChooseUsCardsWrapper>

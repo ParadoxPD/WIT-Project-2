@@ -1,6 +1,9 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaBars } from "react-icons/fa";
+import logo from "../../assets/logo.jpg";
+import infoLogo1 from "../../assets/location.svg";
+import infoLogo2 from "../../assets/whatsapp-nav.svg";
 
 import {
   MobileIcon,
@@ -11,6 +14,11 @@ import {
   NavMenu,
   NavLink,
   LogoWrapper,
+  Infowrapper,
+  Logo,
+  InfoItem,
+  LogoInfoWrapper,
+  InfoLogo,
 } from "./NavbarElements";
 const Navbar = ({ toggle }) => {
   const toggleHome = () => {
@@ -22,7 +30,31 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <NavSection>
-            <LogoWrapper></LogoWrapper>
+            <LogoInfoWrapper>
+              <LogoWrapper onClick={toggleHome}>
+                <Logo src={logo} />
+              </LogoWrapper>
+              <Infowrapper>
+                <InfoItem
+                  onClick={() => {
+                    window
+                      .open("https://goo.gl/maps/fJAXporz5wcB5LV96", "_blank")
+                      .focus();
+                  }}
+                >
+                  <InfoLogo src={infoLogo1} />
+                  Location
+                </InfoItem>
+                <InfoItem
+                  onClick={() => {
+                    window.open("https://wa.me/919438484582", "_blank").focus();
+                  }}
+                >
+                  <InfoLogo src={infoLogo2} />
+                  9438484582
+                </InfoItem>
+              </Infowrapper>
+            </LogoInfoWrapper>
           </NavSection>
           <NavSection>
             <MobileIcon onClick={toggle}>

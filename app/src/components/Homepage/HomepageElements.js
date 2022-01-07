@@ -11,6 +11,11 @@ export const HeroContainer = styled.div`
   background: ${colorScheme.black};
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 1080px) {
+    height: 35vh;
+    width: 100%;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -21,51 +26,38 @@ export const HeroH1 = styled.h1`
   top: 50px;
   left: 5%;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1080px) {
     font-size: 2.5rem;
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 2rem;
-  }
   span {
     display: block;
     font-size: 4.8rem;
-    @media screen and (max-width: 960px) {
-      font-size: 4rem;
-    }
-
-    @media screen and (max-width: 768px) {
-      font-size: 3.5rem;
+    @media screen and (max-width: 1080px) {
+      font-size: 3.8rem;
     }
   }
 `;
 export const HeroH2 = styled.h1`
   color: ${colorScheme.white};
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   margin-left: 15px;
   width: 80vw;
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translateX(-30%);
-  @media screen and (max-width: 960px) {
-    font-size: 1.5rem;
+  transform: translateX(-40%);
+  @media screen and (max-width: 1080px) {
+    transform: translateX(-50%);
+    font-size: 1.8rem;
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
   span {
     color: ${colorScheme.white};
     display: block;
-    font-size: 3.4rem;
-    @media screen and (max-width: 960px) {
-      font-size: 2.5rem;
-    }
-
-    @media screen and (max-width: 768px) {
-      font-size: 2rem;
+    font-size: 4.8rem;
+    @media screen and (max-width: 1080px) {
+      font-size: 3.8rem;
     }
   }
 `;

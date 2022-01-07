@@ -11,12 +11,11 @@ export const AboutContainer = styled.div`
   background: ${colorScheme.black};
   margin-top: 40px;
   /* padding-left: 40px; */
-
-  @media screen and (max-width: 768px) {
-    /* height: 1100px; */
-  }
-  @media screen and (max-width: 480px) {
-    /* height: 1300px; */
+  @media screen and (max-width: 1080px) {
+    margin-top: 0px;
+    margin-bottom: 120px;
+    flex-direction: column;
+    /* height: 100vh; */
   }
 `;
 
@@ -58,7 +57,7 @@ export const AboutImg = styled.img`
   transform: scale(0.8);
   justify-self: flex-end;
   align-self: flex-end;
-  width: 30vw;
+  width: 40vw;
   /* position: absolute; */
   /* bottom: 0; */
   /* right: 0; */

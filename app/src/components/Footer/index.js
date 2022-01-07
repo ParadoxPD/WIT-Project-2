@@ -5,48 +5,61 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <section className="footer-subscription">
-        <p className="footer-subscription-heading">Contact Us</p>
-        <p className="footer-subscription-text">Enter your Email Address</p>
-        <div className="input-areas">
-          <form>
-            <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Your Email"
-            />
-            {/* <Button buttonStyle="btn--outline">Subscribe</Button> */}
-          </form>
-        </div>
-      </section>
-      <div class="footer-links">
-        <div className="footer-link-wrapper">
-          <div class="footer-link-items">
-            <h2>About Us</h2>
-            <Link to="/">Terms of Service</Link>
-          </div>
-          <div class="footer-link-items">
+    <div className={"footer-container"}>
+      <div className={"footer-links"}>
+        <div className={"footer-link-wrapper"}>
+          <div className={"footer-link-items"}>
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                window.open("https://wa.me/919438484582", "_blank").focus();
+              }}
+            >
+              Contact
+            </Link>
+            <Link
+              to="/"
+              onClick={() => {
+                window.open("https://wa.me/919438484582", "_blank").focus();
+              }}
+            >
+              Support
+            </Link>
           </div>
         </div>
-        <div className="footer-link-wrapper">
-          <div class="footer-link-items"></div>
-          <div class="footer-link-items">
+        <div className={"footer-link-wrapper"}>
+          <div className={"footer-link-items"}>
             <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                window
+                  .open(
+                    "https://www.instagram.com/professionalcarspa/",
+                    "_blank"
+                  )
+                  .focus();
+              }}
+            >
+              Instagram
+            </Link>
+            <Link
+              to="/"
+              onClick={() => {
+                window
+                  .open("https://m.facebook.com/803300889857124/", "_blank")
+                  .focus();
+              }}
+            >
+              Facebook
+            </Link>
           </div>
         </div>
       </div>
-      <section class="social-media">
-        <div class="social-media-wrap">
-          <div class="footer-logo">
+      <section className={"social-media"}>
+        <div className={"social-media-wrap"}>
+          <div className={"footer-logo"}>
             <Link
               onClick={() => {
                 Scroll.scrollToTop({ duration: 500 });
@@ -54,51 +67,39 @@ const Footer = () => {
               to="/"
               className="social-logo"
             >
-              Prominent Diagonistics
-              <i class="fab fa-typo3" />
+              Professional Car Spa
             </Link>
           </div>
-          <small class="website-rights">Web International Tech © 2021</small>
-          <div class="social-icons">
+          <small className={"website-rights"}>
+            Copyrighted by © <a href="#">Web International Tech</a> 2021
+          </small>
+          <div className={"social-icons"}>
             <Link
-              class="social-icon-link facebook"
+              className="social-icon-link facebook"
               to="/"
-              target="_blank"
+              onClick={() => {
+                window
+                  .open("https://m.facebook.com/803300889857124/", "_blank")
+                  .focus();
+              }}
               aria-label="Facebook"
             >
-              <i class="fab fa-facebook-f" />
+              <i className="fab fa-facebook-f" />
             </Link>
             <Link
-              class="social-icon-link instagram"
+              className="social-icon-link instagram"
               to="/"
-              target="_blank"
+              onClick={() => {
+                window
+                  .open(
+                    "https://www.instagram.com/professionalcarspa/",
+                    "_blank"
+                  )
+                  .focus();
+              }}
               aria-label="Instagram"
             >
-              <i class="fab fa-instagram" />
-            </Link>
-            <Link
-              class="social-icon-link youtube"
-              to="/"
-              target="_blank"
-              aria-label="Youtube"
-            >
-              <i class="fab fa-youtube" />
-            </Link>
-            <Link
-              class="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter" />
-            </Link>
-            <Link
-              class="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin" />
+              <i className="fab fa-instagram" />
             </Link>
           </div>
         </div>

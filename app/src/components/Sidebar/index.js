@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Form from "../AppointmentForm";
 import {
   SidebarContainer,
   Icon,
@@ -25,12 +24,12 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="services" onClick={toggle}>
             Services
           </SidebarLink>
-          <SidebarLink to="gallery" onClick={toggle}>
-            Gallery
+          <SidebarLink to="choose" onClick={toggle}>
+            Why Choose Us
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          {/* <SidebarLink to="contact" onClick={toggle}>
             Contact Us
-          </SidebarLink>
+          </SidebarLink> */}
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

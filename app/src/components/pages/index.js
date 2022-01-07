@@ -28,7 +28,12 @@ const Home = () => {
 
       <Footer />
 
-      <Image onClick={() => {}} src={whatsApp} />
+      <Image
+        onClick={() => {
+          window.open("https://wa.me/919438484582", "_blank").focus();
+        }}
+        src={whatsApp}
+      />
     </>
   );
 };

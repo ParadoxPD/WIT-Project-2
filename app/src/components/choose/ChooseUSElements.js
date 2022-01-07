@@ -8,6 +8,9 @@ export const ChooseUsContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 40px;
+  @media screen and (max-width: 1080px) {
+    margin-bottom: 0px;
+  }
 `;
 
 export const ChooseUsWrapper = styled.div`
@@ -15,8 +18,12 @@ export const ChooseUsWrapper = styled.div`
   background-color: #1d1d1d;
   flex-direction: column;
   width: 50vw;
-  height: 80vh;
+  height: 100vh;
   padding: 20px;
+  @media screen and (max-width: 1080px) {
+    height: 40vh;
+    width: 60vw;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -29,7 +36,7 @@ export const Heading = styled.h1`
 
 export const ChooseUsCardsWrapper = styled.div`
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 `;
@@ -72,6 +79,9 @@ export const CardIcon = styled.img`
 export const CardH2 = styled.h2`
   font-size: 0.6rem;
   color: ${colorScheme.white};
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
 
   @media screen and (max-width: 768px) {
     font-size: 0.5rem;

@@ -34,18 +34,50 @@ export const NavbarContainer = styled.nav`
 
 export const NavSection = styled.div`
   display: flex;
-  /* padding: 0 4vw; */
   justify-content: space-between;
   height: 60px;
   width: 100%;
+`;
+export const LogoInfoWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background-color: ${colorScheme.black};
 `;
 
 export const LogoWrapper = styled.div`
   display: flex;
   background: ${colorScheme.black};
-  justify-content: space-between;
+  /* height: 60px; */
+  width: 36vw;
+`;
+export const Logo = styled.img`
+  display: flex;
+  background: ${colorScheme.black};
+  cursor: pointer;
+`;
+
+export const Infowrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
   height: 60px;
   width: 100%;
+`;
+
+export const InfoItem = styled.div`
+  color: ${colorScheme.white};
+  cursor: pointer;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+`;
+export const InfoLogo = styled.img`
+  padding-right: 8px;
+  transform: scale(0.8);
 `;
 
 export const NavLogo = styled(LinkR)`

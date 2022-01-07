@@ -4,7 +4,8 @@ import DetailingImage from "../../assets/services/detailing.svg";
 import TreatmentImage from "../../assets/services/treatment.svg";
 import BodyShopImage from "../../assets/services/bodyshop.svg";
 import image from "../../assets/services/services-footer.svg";
-import Form from "../AppointmentForm";
+import Modal from "../ServicesModal";
+import ModalDataset from "./servicesDesc";
 import {
   ServicesContainer,
   ServicesWrapper,
@@ -23,8 +24,38 @@ import {
 } from "./ServicesElements";
 
 const Services = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [modalDataName, setModalDataName] = useState("");
+
+  const openModal = (e) => {
+    const modalName = e.target.parentElement.lastChild.firstChild.innerText;
+    console.log(modalName);
+    if (
+      !showModal &&
+      modalName !== undefined &&
+      modalName !== "" &&
+      modalName !== null
+    ) {
+      setModalDataName(modalName);
+      setShowModal(true);
+      document.body.style.overflow = "hidden";
+    }
+  };
+
+  const closeModal = () => {
+    if (showModal) {
+      setShowModal(false);
+      document.body.style.overflow = "unset";
+    }
+  };
+
   return (
     <ServicesContainer id="services">
+      <Modal
+        showModal={showModal}
+        closeModal={closeModal}
+        modalData={ModalDataset[modalDataName]}
+      />
       <ServicesH1Wrapper>
         <ServicesHeading>
           <ServicesImg src={ServicesImage} />
@@ -36,7 +67,7 @@ const Services = () => {
         </ServicesGroupHeading>
 
         <ServicesDiv>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/detailing/car wash image.jpg")}
             />
@@ -44,7 +75,7 @@ const Services = () => {
               <ServicesH2>Car Wash</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/detailing/car_polishing.jpg")}
             />
@@ -52,7 +83,7 @@ const Services = () => {
               <ServicesH2>Car Polishing</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/detailing/ceramic_coating.jpg")}
             />
@@ -60,7 +91,7 @@ const Services = () => {
               <ServicesH2>Ceramic Coating</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/detailing/paint_protection_film_(PPF).jpg")}
             />
@@ -75,10 +106,10 @@ const Services = () => {
             transform: "scale(0.8)",
           }}
         >
-          <ServicesGroupImg src={TreatmentImage} style={{ left: "0" }} />
+          <ServicesGroupImg src={TreatmentImage} />
         </ServicesGroupHeading>
         <ServicesDiv>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/ac_vent_repair.jpg")}
             />
@@ -86,7 +117,7 @@ const Services = () => {
               <ServicesH2>AC Vent Repair</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/alloy_wheel_treatment.jpg")}
             />
@@ -94,7 +125,7 @@ const Services = () => {
               <ServicesH2>Alloy Wheel Treatment</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/head_light_restoration.jpg")}
             />
@@ -102,7 +133,7 @@ const Services = () => {
               <ServicesH2>HeadLight Restoration</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/hyegiene_interior_clean.jpg")}
             />
@@ -110,7 +141,7 @@ const Services = () => {
               <ServicesH2>Hygiene Interior Clean</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/leather_protection_and_conditioning.jpg")}
             />
@@ -118,7 +149,7 @@ const Services = () => {
               <ServicesH2>Leather Protection and Conditioning</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/paint_refinement.webp")}
             />
@@ -126,7 +157,7 @@ const Services = () => {
               <ServicesH2>Paint Refinement</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/paint_restoration.jpg")}
             />
@@ -134,7 +165,7 @@ const Services = () => {
               <ServicesH2>Paint Restoration</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/under_body_antirust_coating.jpg")}
             />
@@ -143,7 +174,7 @@ const Services = () => {
             </ServicesDesc>
           </ServicesCard>
 
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/treatment/wind_sheild_glass_treatment.jpg")}
             />
@@ -156,7 +187,7 @@ const Services = () => {
           <ServicesGroupImg src={BodyShopImage} />
         </ServicesGroupHeading>
         <ServicesDiv>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/bodyshop/car_damping.jpg")}
             />
@@ -164,7 +195,7 @@ const Services = () => {
               <ServicesH2>Car Damping</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/bodyshop/car_painting.jpg")}
             />
@@ -172,7 +203,7 @@ const Services = () => {
               <ServicesH2>Car Painting</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/bodyshop/chasis_repair.jpg")}
             />
@@ -180,7 +211,7 @@ const Services = () => {
               <ServicesH2>Chasis Repair</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/bodyshop/dent_reapir.jpg")}
             />
@@ -196,7 +227,7 @@ const Services = () => {
               <ServicesH2>Major Car Accident Repair</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/bodyshop/major_car_accident repair.jpg")}
             />
@@ -204,7 +235,7 @@ const Services = () => {
               <ServicesH2>Major Car Accident Repair</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard>
+          <ServicesCard onClick={openModal}>
             <ServicesIcon
               src={require("../../assets/services/bodyshop/mig_welding.jpg")}
             />

@@ -37,17 +37,17 @@ const HomePage = () => {
         </HeroH2>
       </>
     ),
-    3: (
+    4: (
       <>
         <HeroH2>
           Best <span>Paint Correction and Refinement</span>
         </HeroH2>
       </>
     ),
-    4: (
+    3: (
       <>
         <HeroH2>
-          Save your Car from minor scratches with
+          Save your Car from major scratches with
           <span>Paint Protection Film</span>
         </HeroH2>
       </>
