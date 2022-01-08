@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { animateScroll as Scroll } from "react-scroll";
 import { Link } from "react-router-dom";
-
+import image from "../../assets/logo.jpg";
 const Footer = () => {
   return (
     <div className={"footer-container"}>
@@ -77,11 +77,18 @@ const Footer = () => {
               to="/"
               className="social-logo"
             >
-              Professional Car Spa
+              <img
+                src={image}
+                style={{ width: "340px", marginRight: "40px" }}
+              />
             </Link>
           </div>
           <small className={"website-rights"}>
-            Copyrighted by © <a href="#">Web International Tech</a> 2021
+            Copyrighted by ©{" "}
+            <a href="#" style={{ textDecoration: "none", fontSize: "20px" }}>
+              Web International Tech
+            </a>{" "}
+            2021
           </small>
           <div className={"social-icons"}>
             <Link
