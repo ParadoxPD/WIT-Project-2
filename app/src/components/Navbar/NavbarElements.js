@@ -7,7 +7,7 @@ const navSwitchWidth = "840px";
 
 export const Nav = styled.nav`
   background: ${navColor};
-  height: 120px;
+  height: 160px;
   margin-bottom: 30;
   width: 100%;
   display: flex;
@@ -41,7 +41,7 @@ export const NavSection = styled.div`
 export const LogoInfoWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  height: 100px;
   width: 100%;
   background-color: ${colorScheme.black};
 `;
@@ -50,7 +50,7 @@ export const LogoWrapper = styled.div`
   display: flex;
   background: ${colorScheme.black};
   /* height: 60px; */
-  width: 36vw;
+  width: 40vw;
 `;
 export const Logo = styled.img`
   display: flex;
@@ -63,7 +63,7 @@ export const Infowrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 30px;
-  height: 60px;
+  height: 100px;
   width: 100%;
 `;
 

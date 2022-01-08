@@ -35,6 +35,16 @@ const Footer = () => {
               to="/"
               onClick={() => {
                 window
+                  .open("mailto:professionalcarspa@gmail.com", "_blank")
+                  .focus();
+              }}
+            >
+              Gmail
+            </Link>
+            <Link
+              to="/"
+              onClick={() => {
+                window
                   .open(
                     "https://www.instagram.com/professionalcarspa/",
                     "_blank"
@@ -74,6 +84,18 @@ const Footer = () => {
             Copyrighted by © <a href="#">Web International Tech</a> 2021
           </small>
           <div className={"social-icons"}>
+            <Link
+              className="social-icon-link facebook"
+              to="/"
+              onClick={() => {
+                window
+                  .open("mailto:professionalcarspa@gmail.com", "_blank")
+                  .focus();
+              }}
+              aria-label="Facebook"
+            >
+              <i className="far fa-envelope" />
+            </Link>
             <Link
               className="social-icon-link facebook"
               to="/"

@@ -29,8 +29,8 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavSection>
-            <LogoInfoWrapper>
+          <NavSection style={{ height: "100px" }}>
+            <LogoInfoWrapper style={{ height: "100px" }}>
               <LogoWrapper onClick={toggleHome}>
                 <Logo src={logo} />
               </LogoWrapper>
@@ -68,7 +68,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-140}
+                  offset={-160}
                 >
                   Home
                 </NavLink>
@@ -80,7 +80,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-140}
+                  offset={-160}
                 >
                   About Us
                 </NavLink>
@@ -92,7 +92,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-140}
+                  offset={-160}
                 >
                   Services
                 </NavLink>
@@ -104,7 +104,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-140}
+                  offset={-160}
                 >
                   Why Choose Us
                 </NavLink>

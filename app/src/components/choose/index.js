@@ -25,7 +25,7 @@ const ChooseUs = () => {
       <ChooseUsWrapper>
         <Heading>
           <span style={{ display: "block", fontSize: "3.5rem" }}>Why</span>
-          <span style={{ color: `${colorScheme.yellow}` }}>Choose</span>
+          <span style={{ color: `${colorScheme.red}` }}>Choose</span>
           <span>Us?</span>
         </Heading>
         <ChooseUsCardsWrapper>
