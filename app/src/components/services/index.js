@@ -219,7 +219,7 @@ const Services = () => {
               <ServicesH2>Dent Repair</ServicesH2>
             </ServicesDesc>
           </ServicesCard>
-          <ServicesCard style={{ visibility: "hidden", pointerEvents: "none" }}>
+          <ServicesCard className={"placeholder"}>
             <ServicesIcon
               src={require("../../assets/services/bodyshop/major_car_accident repair.jpg")}
             />

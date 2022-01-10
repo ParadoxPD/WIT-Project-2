@@ -28,7 +28,7 @@ export const ServicesDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1080px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
   @media screen and (max-width: 768px) {
@@ -60,8 +60,19 @@ export const ServicesCard = styled.div`
   }
 
   @media screen and (max-width: 1080px) {
-    height: 120px;
-    width: 192px;
+    height: 175px;
+    width: 280px;
+
+    &.placeholder {
+      visibility: hidden;
+      pointer-events: none;
+      display: none;
+    }
+  }
+
+  &.placeholder {
+    visibility: hidden;
+    pointer-events: none;
   }
 `;
 
@@ -131,7 +142,7 @@ export const ServicesH2 = styled.h2`
 
   text-align: center;
   @media screen and (max-width: 1080px) {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 `;
 
